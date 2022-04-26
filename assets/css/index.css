@@ -190,10 +190,10 @@ textarea::placeholder {
 }
 
 .main-courses-message::before {
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'Font Awesome 5 Free';
   color: var(--secondary-color);
   font: var(--fa-font-solid);
-  content: '\f007';
+  content: '\f111';
   font-size: 18px;
   margin-right: 8px;
 }
@@ -245,6 +245,47 @@ textarea::placeholder {
 #team {
   position: relative;
   height: 100vh;
+}
+
+.university-team-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.58rem;
+  font-weight: lighter !important;
+  color: var(--white-color);
+}
+
+.main-team-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
+.main-team-message::before {
+  font-family: 'Font Awesome 5 Free';
+  color: var(--secondary-color);
+  font: var(--fa-font-solid);
+  content: '\f111';
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.secondary-team-message {
+  font-family: 'Concert One', cursive;
+  font-size: 2.5rem;
+}
+
+.team-message-container .separator {
+  border-top: 5px solid var(--secondary-color);
+  width: 360px;
+}
+
+.team-button {
+  height: 36px;
+  width: 120px;
+}
+
+.team-button button {
+  font-size: 0.75rem !important;
+  font-weight: bolder !important;
 }
 
 /*************** Team section ******************/
