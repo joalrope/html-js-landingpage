@@ -10,7 +10,24 @@
 	--white-color: #fff;
 }
 
+body {
+	height: 98%;
+}
+
+.nav-pills .nav-link .active,
+.nav-pills .show > .nav-link {
+	background-color: var(--secondary-color);
+	color: var(--primary-color) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	background-color: var(--secondary-color);
+	color: var(--primary-color) !important;
+}
+
 main {
+	height: calc(100vh - 56px);
 	overflow-y: scroll;
 }
 
@@ -73,7 +90,7 @@ main {
 .cover-area {
 	position: absolute;
 	color: var(--white-color);
-	top: 150px;
+	top: 100px;
 	left: 100px;
 	width: 85%;
 	height: 66%;
@@ -81,7 +98,7 @@ main {
 }
 
 .cover-area .message-area h2 {
-	margin-top: 175px;
+	margin-top: 80px;
 	margin-left: 0px;
 }
 .cover-area .message-area h3 {
@@ -94,6 +111,16 @@ main {
 	border-width: 2px !important;
 	margin-bottom: 12px;
 	margin-top: 12px;
+}
+
+button {
+	width: 230px;
+	height: 56px;
+	border: 2px solid var(--white-color) !important;
+	border-radius: 40px !important;
+	color: var(--white-color) !important;
+	font-size: 1.33em !important;
+	font-weight: bolder !important;
 }
 
 .cover-area .form-area .form-container .form-top-container {
