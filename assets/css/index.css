@@ -1,6 +1,114 @@
+:root {
+	--primary-color: #02557d;
+	--secondary-color: #ffb749;
+	--success-color: #769fbf;
+	--info-color: #306e96;
+	--warning-color: #c45729;
+	--danger-color: #dd3e0e;
+	--light-color: #f9f9fb;
+	--dark-color: #1b1e21;
+	--white-color: #fff;
+}
+
+main {
+	overflow-y: scroll;
+}
+
+#home {
+	position: relative;
+	height: 100vh;
+}
+
+#courses {
+	position: relative;
+	height: 100vh;
+}
+
+#team {
+	position: relative;
+	height: 100vh;
+}
+
+#about {
+	position: relative;
+	height: 100vh;
+}
+
 .home {
-  background-image: url('/assets/images/IMAGEN HERO.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -40px;
+	position: relative;
+	background-image: url("/assets/images/IMAGEN HERO.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	top: 0px;
+}
+
+.home:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background-image: url("/assets/images/IMAGEN HERO.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.over-home {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	background-color: var(--primary-color);
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.cover-area {
+	position: absolute;
+	color: var(--white-color);
+	top: 150px;
+	left: 100px;
+	width: 85%;
+	height: 66%;
+	z-index: 2;
+}
+
+.cover-area .message-area h2 {
+	margin-top: 175px;
+	margin-left: 0px;
+}
+.cover-area .message-area h3 {
+	font-size: 50px;
+	font-family: "Concert One", cursive;
+}
+
+.cover-area .message-area div {
+	width: 230px;
+	border-width: 2px !important;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.cover-area .form-area .form-container .form-top-container {
+	height: 48px;
+	width: 360px;
+	background-color: var(--primary-color);
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom: 3px solid var(--secondary-color);
+}
+
+.cover-area .form-area .form-container .form-bottom-container {
+	height: 400px;
+	width: 360px;
+	background-color: var(--white-color);
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
