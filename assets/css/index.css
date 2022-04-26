@@ -1,141 +1,259 @@
 :root {
-	--primary-color: #02557d;
-	--secondary-color: #ffb749;
-	--success-color: #769fbf;
-	--info-color: #306e96;
-	--warning-color: #c45729;
-	--danger-color: #dd3e0e;
-	--light-color: #f9f9fb;
-	--dark-color: #1b1e21;
-	--white-color: #fff;
+  --primary-color: #02557d;
+  --secondary-color: #ffb749;
+  --success-color: #769fbf;
+  --info-color: #306e96;
+  --warning-color: #c45729;
+  --danger-color: #dd3e0e;
+  --light-color: #f9f9fb;
+  --dark-color: #1b1e21;
+  --white-color: #fff;
 }
 
 body {
-	height: 98%;
+  font-family: 'Roboto', sans-serif;
 }
+
+main {
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--white-color) !important;
+  border-radius: 40px !important;
+  color: var(--white-color) !important;
+}
+
+input {
+  all: unset;
+  background-color: #e5e5e5;
+  border-radius: 14px;
+  width: 100%;
+  height: 30px;
+}
+
+input::placeholder {
+  font-family: 'Asap', sans-serif;
+  color: #909090;
+  padding-left: 24px;
+}
+
+textarea {
+  all: unset;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-family: 'Asap', sans-serif;
+  color: #909090;
+  padding-left: 24px;
+}
+
+/*************** Navbar ******************/
 
 .nav-pills .nav-link .active,
 .nav-pills .show > .nav-link {
-	background-color: var(--secondary-color);
-	color: var(--primary-color) !important;
+  background-color: var(--secondary-color);
+  color: var(--primary-color) !important;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-	background-color: var(--secondary-color);
-	color: var(--primary-color) !important;
+  background-color: var(--secondary-color);
+  color: var(--primary-color) !important;
 }
 
-main {
-	height: calc(100vh - 56px);
-	overflow-y: scroll;
-}
+/*************** Navbar ******************/
 
+/*************** Home section ******************/
 #home {
-	position: relative;
-	height: 100vh;
-}
-
-#courses {
-	position: relative;
-	height: 100vh;
-}
-
-#team {
-	position: relative;
-	height: 100vh;
-}
-
-#about {
-	position: relative;
-	height: 100vh;
+  position: relative;
+  height: calc(100vh - 48px);
 }
 
 .home {
-	position: relative;
-	background-image: url("/assets/images/IMAGEN HERO.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 100%;
-	top: 0px;
+  position: relative;
+  background-image: url('/assets/images/IMAGEN HERO.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  top: 0px;
 }
 
 .home:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0;
-	background-image: url("/assets/images/IMAGEN HERO.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-image: url('/assets/images/IMAGEN HERO.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .over-home {
-	position: absolute;
-	top: 0px;
-	left: 0;
-	background-color: var(--primary-color);
-	width: 100%;
-	height: 100%;
-	opacity: 0.5;
-	z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .cover-area {
-	position: absolute;
-	color: var(--white-color);
-	top: 100px;
-	left: 100px;
-	width: 85%;
-	height: 66%;
-	z-index: 2;
+  position: absolute;
+  color: var(--white-color);
+  top: 215px;
+  left: 100px;
+  width: 85%;
+  height: 66%;
+  z-index: 2;
 }
 
 .cover-area .message-area h2 {
-	margin-top: 80px;
-	margin-left: 0px;
+  margin-top: 80px;
+  margin-left: 0px;
 }
 .cover-area .message-area h3 {
-	font-size: 50px;
-	font-family: "Concert One", cursive;
+  font-size: 50px;
+  font-family: 'Concert One', cursive;
 }
 
 .cover-area .message-area div {
-	width: 230px;
-	border-width: 2px !important;
-	margin-bottom: 12px;
-	margin-top: 12px;
-}
-
-button {
-	width: 230px;
-	height: 56px;
-	border: 2px solid var(--white-color) !important;
-	border-radius: 40px !important;
-	color: var(--white-color) !important;
-	font-size: 1.33em !important;
-	font-weight: bolder !important;
+  width: 230px;
+  border-width: 2px !important;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .cover-area .form-area .form-container .form-top-container {
-	height: 48px;
-	width: 360px;
-	background-color: var(--primary-color);
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-	border-bottom: 3px solid var(--secondary-color);
+  height: 48px;
+  width: 400px;
+  background-color: var(--primary-color);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .cover-area .form-area .form-container .form-bottom-container {
-	height: 400px;
-	width: 360px;
-	background-color: var(--white-color);
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--white-color);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
+
+.message-button {
+  height: 56px;
+  width: 230px;
+}
+.message-button button {
+  font-size: 0.95rem !important;
+  font-weight: bolder !important;
+}
+
+.form-button {
+  height: 36px;
+  width: 120px;
+}
+
+.form-button button {
+  font-size: 0.75rem !important;
+  font-weight: bolder !important;
+}
+
+/*************** Home section ******************/
+
+/*************** Courses section ******************/
+
+#courses {
+  position: relative;
+  height: 100vh;
+}
+
+.main-courses-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
+.main-courses-message::before {
+  font-family: 'Font Awesome 6 Free';
+  color: var(--secondary-color);
+  font: var(--fa-font-solid);
+  content: '\f007';
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.secondary-courses-message {
+  font-family: 'Concert One', cursive;
+  font-size: 2.5rem;
+}
+
+.courses-message-container .separator {
+  border-top: 5px solid var(--secondary-color);
+  width: 360px;
+}
+
+.card-text p {
+  font-family: 'Concert One', cursive;
+}
+
+.card-button {
+  height: 40px;
+  width: 100%;
+}
+
+.card-button button {
+  font-size: 1rem !important;
+  width: 50%;
+}
+
+.courses-button {
+  height: 50px;
+}
+
+.courses-button button {
+  border-color: 1px solid var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
+  font-size: 1.25rem !important;
+  font-weight: 100 !important;
+  width: 15%;
+}
+
+.courses-button button:hover {
+  color: var(--white-color) !important;
+}
+
+/*************** Courses section ******************/
+
+/*************** Team section ******************/
+
+#team {
+  position: relative;
+  height: 100vh;
+}
+
+/*************** Team section ******************/
+
+/*************** About section ******************/
+
+#about {
+  position: relative;
+  height: 100vh;
+}
+
+/*************** About section ******************/
